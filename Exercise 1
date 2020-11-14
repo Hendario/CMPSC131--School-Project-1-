@@ -1,0 +1,6 @@
+Exercise:1
+Choose an appropriate data type and data structure (lists, lists of list, dictionary) for storing the information in your program. Create two database text files and fill them with mock data.
+
+Hint: you may use a plain text file, CSV, JSON, XML or other file formats that may suit your needs
+You may organize this data as a list/dictionary or go with an object oriented approach and make objects for each major data item
+
