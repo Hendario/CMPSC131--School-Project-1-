@@ -17,19 +17,19 @@ def main():
                 change()
                 break
 
-def student_inform():
-    filename = "students.csv"
+def student_inform():       #create a definition of student inform.
+    filename = "Students.csv"       #then I set the filename connect with the 1 database that I created [Students]
 
-    with open(filename) as csvfile:
-       reader = csv.DictReader(csvfile)
-       student_id = input('Enter the student id: ')
-       for row in reader:
-           if student_id == row['student_id']:
-               for key,value in row.items():
-                   print(key,':',value)
-               break
+    with open(filename,'r') as csvfile:     #So, I learn the 'with' statement from zybook on 10.6, open the file as csv, just for reading it
+       reader = csv.DictReader(csvfile)     #an function that can read csv file as dictionary.
+       student_id = input('Enter the student id: ')     #Enter the student id as a keyword
+       for row in reader:       #create a for loop to find if this id is in csv file.
+           if student_id == row['student_id']:      #if is found
+               for key,value in row.items():        #if the key[id] is found in the csv file.
+                   print(key,':',value)     #print down the id of that, and write it as rows
+               break        #finish the loop
        else:
-           print('This id does not exist')
+           print('This id does not exist')      #else, since the id is not in my database, so 'this does not exist'
 
 
 def meun():
