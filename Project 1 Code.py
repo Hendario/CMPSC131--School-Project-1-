@@ -4,7 +4,7 @@ def main():
 
     while True:
         meun()
-        choice = int(input('Plese slecte'))
+        choice = int(input('Plese select'))
         if choice in [1,2,3,]:
             if choice == 1:
                 student_id()
