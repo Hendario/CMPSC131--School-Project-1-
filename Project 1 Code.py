@@ -17,7 +17,15 @@ def main():
                 change()
                 break
 
-def student_inform():       #create a definition of student inform.
+def meun():
+    print("----------------meun--------------------")
+    print("|         1.Student information        |")
+    print("|         2.Courses                    |")
+    print("|         3.Change                     |")
+    print("----------------------------------------")
+
+    
+def student_inform():       #create a definition call student inform.
     filename = "Students.csv"       #then I set the filename connect with the 1 database that I created [Students]
 
     with open(filename,'r') as csvfile:     #So, I learn the 'with' statement from zybook on 10.6, open the file as csv, just for reading it
@@ -30,14 +38,6 @@ def student_inform():       #create a definition of student inform.
                break        #finish the loop
        else:
            print('This id does not exist')      #else, since the id is not in my database, so 'this does not exist'
-
-
-def meun():
-    print("----------------meun--------------------")
-    print("|         1.Student information        |")
-    print("|         2.Courses                    |")
-    print("|         3.Change                     |")
-    print("----------------------------------------")
 
 
 def course():
