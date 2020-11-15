@@ -11,7 +11,7 @@ def main():
                 break
 
             elif choice == 2:
-                course()
+                read_ids()
 
             elif choice == 3:
                 change()
@@ -314,9 +314,8 @@ def course():
 
 #---------------------------------------------------------------------------------------------
 
-def course():
-    with open('Student_courses.csv', 'r') as gradefile:
-        read = csv.DictReader(gradefile)
+def read_ids():     #read all the ids, and open them with notepad
+    with open('database.txt', 'r') as gradefile:
         student_id = input('Enter the student number: ')
         if student_id == 'jkl6150':
                 student1_course()
@@ -350,6 +349,9 @@ def course():
                 student15_course()
         else:
             print('This student id does not exist')
+
+        course()        #to open the notepad file
+
 
 def change():
     print()
