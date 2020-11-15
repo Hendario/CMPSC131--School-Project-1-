@@ -30,6 +30,7 @@ def student_inform():       #this is a system for part1
     with open(filename) as csvfile:
        reader = csv.DictReader(csvfile)
        student_id = input('Enter the student id: ')
+       print('○○○○○○○○○○○○○○○○○○○○○○○○○')
        for row in reader:
            if student_id == row['student_id']:
                for key,value in row.items():
@@ -37,6 +38,21 @@ def student_inform():       #this is a system for part1
                break
        else:
            print('This id does not exist')
+       print('○○○○○○○○○○○○○○○○○○○○○○○○○')
+       while True:
+           meun()
+           choice = int(input('Plese select\n'))
+           if choice in [1, 2, 3, ]:
+               if choice == 1:
+                   student_inform()
+                   break
+
+               elif choice == 2:
+                   read_ids()
+
+               elif choice == 3:
+                   change()
+                   break
 
 #---------------------------------------------------------------------------------------------
 #this is the system for part 2
@@ -307,7 +323,7 @@ def student15_course():
         gradefile.close()
 
 
-def course():
+def course_datas():
     with open('database.txt', 'r') as gradefile:
         print(webbrowser.open("database.txt"))
         gradefile.close()
@@ -349,12 +365,14 @@ def read_ids():     #read all the ids, and open them with notepad
                 student15_course()
         else:
             print('This student id does not exist')
-
-        course()        #to open the notepad file
+        print('○○○○○○○○○○○○○○○○○○○○○○○○○')
+        print('Opening the file....\nPlease Wait')
+        course_datas()        #to open the notepad file
+        print('○○○○○○○○○○○○○○○○○○○○○○○○○')
 
 
 def change():
-    print()
+    print('This part is not finish yet')
 
 if __name__ == '__main__':
     main()
