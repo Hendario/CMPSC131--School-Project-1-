@@ -1,9 +1,0 @@
-
-def course():
-    with open('Student_courses.csv', 'r') as gradefile:
-        read = csv.DictReader(gradefile)
-        student_id = input('Enter the student number: ')
-        if student_id == 'jkl6150':
-                print(student1)
-        else:
-            print('This student id does not exist')
