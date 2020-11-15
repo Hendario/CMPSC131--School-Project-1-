@@ -1,5 +1,4 @@
-
-DON"T USE THIS !!!!
+import webbrowser
 
 
 student1 = ['jkl6150\n',
@@ -20,3 +19,10 @@ def student1_course():
         gradefile.close()
 
 student1_course()
+
+def course():
+    with open('Student1_courses.txt', 'r') as gradefile:
+        print(webbrowser.open("Student1_courses.txt"))
+        gradefile.close()
+
+course()
