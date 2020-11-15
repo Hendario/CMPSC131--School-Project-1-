@@ -14,9 +14,11 @@ def main():
                 read_ids()
 
             elif choice == 3:
-                break
+                change_Student_inform()
+
             elif choice == 4:
                 change_student_courses()
+
             elif choice == 5:
                 break
 
@@ -77,11 +79,9 @@ student0 = ['student_id\n',     #example for student form
 #I deleted all others, and decide to put it in all different database
 
 def student0_course():       #this is just an example of how the other 15 works
-        with open('database.txt','w+') as gradefile:
-            read = gradefile.readlines()
-            gradefile.write(student0[0])
-            gradefile.writelines(student0[1])
-            gradefile.close()
+    f = open("database.txt", "r")
+    print(f.read())
+    f.close()
 
 def student1_course():
     f = open("database1.txt", "r")
@@ -128,7 +128,6 @@ def student9_course():
     print(f.read())
     f.close()
 
-
 def student10_course():
     f = open("database10.txt", "r")
     print(f.read())
@@ -160,15 +159,70 @@ def student15_course():
     f.close()
 
 
-def course_datas():
-    with open('database.txt', 'r') as gradefile:
-        print(webbrowser.open("database.txt"))
+def student1_course_datas():
+    with open('database1.txt', 'r') as gradefile:
+        print(webbrowser.open("database1.txt"))
+        gradefile.close()
+def student2_course_datas():
+    with open('database2.txt', 'r') as gradefile:
+        print(webbrowser.open("database2.txt"))
+        gradefile.close()
+def student3_course_datas():
+    with open('database3.txt', 'r') as gradefile:
+        print(webbrowser.open("database3.txt"))
+        gradefile.close()
+def student4_course_datas():
+    with open('database4.txt', 'r') as gradefile:
+        print(webbrowser.open("database4.txt"))
+        gradefile.close()
+def student5_course_datas():
+    with open('database5.txt', 'r') as gradefile:
+        print(webbrowser.open("database5.txt"))
+        gradefile.close()
+def student6_course_datas():
+    with open('database6.txt', 'r') as gradefile:
+        print(webbrowser.open("database6.txt"))
+        gradefile.close()
+def student7_course_datas():
+    with open('database7.txt', 'r') as gradefile:
+        print(webbrowser.open("database7.txt"))
+        gradefile.close()
+def student8_course_datas():
+    with open('database8.txt', 'r') as gradefile:
+        print(webbrowser.open("database8.txt"))
+        gradefile.close()
+def student9_course_datas():
+    with open('database9.txt', 'r') as gradefile:
+        print(webbrowser.open("database9.txt"))
+        gradefile.close()
+def student10_course_datas():
+    with open('database10.txt', 'r') as gradefile:
+        print(webbrowser.open("database10.txt"))
+        gradefile.close()
+def student11_course_datas():
+    with open('database11.txt', 'r') as gradefile:
+        print(webbrowser.open("database11.txt"))
+        gradefile.close()
+def student12_course_datas():
+    with open('database12.txt', 'r') as gradefile:
+        print(webbrowser.open("database12.txt"))
+        gradefile.close()
+def student13_course_datas():
+    with open('database13.txt', 'r') as gradefile:
+        print(webbrowser.open("database13.txt"))
+        gradefile.close()
+def student14_course_datas():
+    with open('database14.txt', 'r') as gradefile:
+        print(webbrowser.open("database14.txt"))
+        gradefile.close()
+def student15_course_datas():
+    with open('database15.txt', 'r') as gradefile:
+        print(webbrowser.open("database15.txt"))
         gradefile.close()
 
 #---------------------------------------------------------------------------------------------
 
 def read_ids():     #read all the ids, and open them with notepad
-    with open('database.txt', 'r') as gradefile:
         student_id = input('Enter the student number: ')
         if student_id == 'jkl6150':
                 student1_course()
@@ -207,6 +261,8 @@ def read_ids():     #read all the ids, and open them with notepad
 
 def change_Student_inform():
     print('○○○○○○○○○○○○○○○○○○○○○○○○○')
+    print('○○          COMING SOON             ○○')
+    print('○○○○○○○○○○○○○○○○○○○○○○○○○')
 
 def change_student_courses():
     print('○○○○○○○○○○○○○○○○○○○○○○○○○')
@@ -214,70 +270,125 @@ def change_student_courses():
     print('Format:\nYears,Semaster,Class,Test1,Test2,Test3,Test4\n(IMPORTANT:Remember to save the file!!!)')
     student_id = input('Enter your student id to change your course\n')
     if student_id == 'jkl6150':
-        student1_course()
         print('Opening the file....\nPlease Wait')
-        course_datas()
+        student1_course_datas()
         ans = input('Are you finished?')
-        if ans == 'Yes':
-            with open("database.txt", 'r') as f:
-                student1 = [line.rstrip('\n') for line in f]
-                print(student1)
+        if ans == 'Yes' or 'yes':
+            print('Your change have been saved')
+        else:
+            print('Your file might not saved')
     elif student_id == 'jmc8444':
-        student2_course()
         print('Opening the file....\nPlease Wait')
-        course_datas()
+        student2_course_datas()
+        ans = input('Are you finished?')
+        if ans == 'Yes' or 'yes':
+            print('Your change have been saved')
+        else:
+            print('Your file might not saved')
     elif student_id == 'abc0003':
-        student3_course()
         print('Opening the file....\nPlease Wait')
-        course_datas()
+        student3_course_datas()
+        ans = input('Are you finished?')
+        if ans == 'Yes' or 'yes':
+            print('Your change have been saved')
+        else:
+            print('Your file might not saved')
     elif student_id == 'abc0004':
-        student4_course()
         print('Opening the file....\nPlease Wait')
-        course_datas()
+        student4_course_datas()
+        ans = input('Are you finished?')
+        if ans == 'Yes' or 'yes':
+            print('Your change have been saved')
+        else:
+            print('Your file might not saved')
     elif student_id == 'abc0005':
-        student5_course()
         print('Opening the file....\nPlease Wait')
-        course_datas()
+        student5_course_datas()
+        ans = input('Are you finished?')
+        if ans == 'Yes' or 'yes':
+            print('Your change have been saved')
+        else:
+            print('Your file might not saved')
     elif student_id == 'abc0006':
-        student6_course()
         print('Opening the file....\nPlease Wait')
-        course_datas()
+        student6_course_datas()
+        ans = input('Are you finished?')
+        if ans == 'Yes' or 'yes':
+            print('Your change have been saved')
+        else:
+            print('Your file might not saved')
     elif student_id == 'abc0007':
-        student7_course()
         print('Opening the file....\nPlease Wait')
-        course_datas()
+        student7_course_datas()
+        ans = input('Are you finished?')
+        if ans == 'Yes' or 'yes':
+            print('Your change have been saved')
+        else:
+            print('Your file might not saved')
     elif student_id == 'abc0008':
-        student8_course()
         print('Opening the file....\nPlease Wait')
-        course_datas()
+        student8_course_datas()
+        ans = input('Are you finished?')
+        if ans == 'Yes' or 'yes':
+            print('Your change have been saved')
+        else:
+            print('Your file might not saved')
     elif student_id == 'abc0009':
-        student9_course()
         print('Opening the file....\nPlease Wait')
-        course_datas()
+        student9_course_datas()
+        ans = input('Are you finished?')
+        if ans == 'Yes' or 'yes':
+            print('Your change have been saved')
+        else:
+            print('Your file might not saved')
     elif student_id == 'abc0010':
-        student10_course()
         print('Opening the file....\nPlease Wait')
-        course_datas()
+        student10_course_datas()
+        ans = input('Are you finished?')
+        if ans == 'Yes' or 'yes':
+            print('Your change have been saved')
+        else:
+            print('Your file might not saved')
     elif student_id == 'abc0011':
-        student11_course()
         print('Opening the file....\nPlease Wait')
-        course_datas()
+        student11_course_datas()
+        ans = input('Are you finished?')
+        if ans == 'Yes' or 'yes':
+            print('Your change have been saved')
+        else:
+            print('Your file might not saved')
     elif student_id == 'abc0012':
-        student12_course()
         print('Opening the file....\nPlease Wait')
-        course_datas()
+        student12_course_datas()
+        ans = input('Are you finished?')
+        if ans == 'Yes' or 'yes':
+            print('Your change have been saved')
+        else:
+            print('Your file might not saved')
     elif student_id == 'abc0013':
-        student13_course()
         print('Opening the file....\nPlease Wait')
-        course_datas()
+        student13_course_datas()
+        ans = input('Are you finished?')
+        if ans == 'Yes' or 'yes':
+            print('Your change have been saved')
+        else:
+            print('Your file might not saved')
     elif student_id == 'abc0014':
-        student14_course()
         print('Opening the file....\nPlease Wait')
-        course_datas()
+        student14_course_datas()
+        ans = input('Are you finished?')
+        if ans == 'Yes' or 'yes':
+            print('Your change have been saved')
+        else:
+            print('Your file might not saved')
     elif student_id == 'abc0015':
-        student15_course()
         print('Opening the file....\nPlease Wait')
-        course_datas()
+        student15_course_datas()
+        ans = input('Are you finished?')
+        if ans == 'Yes' or 'yes':
+            print('Your change have been saved')
+        else:
+            print('Your file might not saved')
     else:
         print('This student id does not exist')
 
