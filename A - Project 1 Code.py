@@ -1,4 +1,5 @@
 import csv
+import webbrowser
 
 def main():
 
@@ -66,16 +67,7 @@ def student_inform():       #this is a system for part1
 
 #---------------------------------------------------------------------------------------------
 #this is the system for part 2
-import webbrowser
 
-student0 = ['student_id\n',     #example for student form
-               '2020, Fall, CMPSC131 100 100 100 100 \n'
-               '2020, Fall, MATH140 100 100 100 100 \n'
-               '2020, Fall, ENGL015 100 100 100 100 \n'
-               '2020, Fall, KINES101 100 100 100 100 \n'
-               '2020, Fall, PSU001 100 100 100 100 \n'
-               '2020, Fall, COMM100 100 100 100 100 \n'
-               ]
 #I deleted all others, and decide to put it in all different database
 
 def student0_course():       #this is just an example of how the other 15 works
@@ -272,120 +264,120 @@ def change_student_courses():
     if student_id == 'jkl6150':
         print('Opening the file....\nPlease Wait')
         student1_course_datas()
-        ans = input('Are you finished?')
-        if ans == 'Yes' or 'yes':
+        ans = input('Are you finished?(Yes?)')
+        if ans == 'Yes':
             print('Your change have been saved')
         else:
             print('Your file might not saved')
     elif student_id == 'jmc8444':
         print('Opening the file....\nPlease Wait')
         student2_course_datas()
-        ans = input('Are you finished?')
-        if ans == 'Yes' or 'yes':
+        ans = input('Are you finished?(Yes?)')
+        if ans == 'Yes':
             print('Your change have been saved')
         else:
             print('Your file might not saved')
     elif student_id == 'abc0003':
         print('Opening the file....\nPlease Wait')
         student3_course_datas()
-        ans = input('Are you finished?')
-        if ans == 'Yes' or 'yes':
+        ans = input('Are you finished?(Yes?)')
+        if ans == 'Yes':
             print('Your change have been saved')
         else:
             print('Your file might not saved')
     elif student_id == 'abc0004':
         print('Opening the file....\nPlease Wait')
         student4_course_datas()
-        ans = input('Are you finished?')
-        if ans == 'Yes' or 'yes':
+        ans = input('Are you finished?(Yes?)')
+        if ans == 'Yes':
             print('Your change have been saved')
         else:
             print('Your file might not saved')
     elif student_id == 'abc0005':
         print('Opening the file....\nPlease Wait')
         student5_course_datas()
-        ans = input('Are you finished?')
-        if ans == 'Yes' or 'yes':
+        ans = input('Are you finished?(Yes?)')
+        if ans == 'Yes':
             print('Your change have been saved')
         else:
             print('Your file might not saved')
     elif student_id == 'abc0006':
         print('Opening the file....\nPlease Wait')
         student6_course_datas()
-        ans = input('Are you finished?')
-        if ans == 'Yes' or 'yes':
+        ans = input('Are you finished?(Yes?)')
+        if ans == 'Yes':
             print('Your change have been saved')
         else:
             print('Your file might not saved')
     elif student_id == 'abc0007':
         print('Opening the file....\nPlease Wait')
         student7_course_datas()
-        ans = input('Are you finished?')
-        if ans == 'Yes' or 'yes':
+        ans = input('Are you finished?(Yes?)')
+        if ans == 'Yes':
             print('Your change have been saved')
         else:
             print('Your file might not saved')
     elif student_id == 'abc0008':
         print('Opening the file....\nPlease Wait')
         student8_course_datas()
-        ans = input('Are you finished?')
-        if ans == 'Yes' or 'yes':
+        ans = input('Are you finished?(Yes?)')
+        if ans == 'Yes':
             print('Your change have been saved')
         else:
             print('Your file might not saved')
     elif student_id == 'abc0009':
         print('Opening the file....\nPlease Wait')
         student9_course_datas()
-        ans = input('Are you finished?')
-        if ans == 'Yes' or 'yes':
+        ans = input('Are you finished?(Yes?)')
+        if ans == 'Yes':
             print('Your change have been saved')
         else:
             print('Your file might not saved')
     elif student_id == 'abc0010':
         print('Opening the file....\nPlease Wait')
         student10_course_datas()
-        ans = input('Are you finished?')
-        if ans == 'Yes' or 'yes':
+        ans = input('Are you finished?(Yes?)')
+        if ans == 'Yes':
             print('Your change have been saved')
         else:
             print('Your file might not saved')
     elif student_id == 'abc0011':
         print('Opening the file....\nPlease Wait')
         student11_course_datas()
-        ans = input('Are you finished?')
-        if ans == 'Yes' or 'yes':
+        ans = input('Are you finished?(Yes?)')
+        if ans == 'Yes':
             print('Your change have been saved')
         else:
             print('Your file might not saved')
     elif student_id == 'abc0012':
         print('Opening the file....\nPlease Wait')
         student12_course_datas()
-        ans = input('Are you finished?')
-        if ans == 'Yes' or 'yes':
+        ans = input('Are you finished?(Yes?)')
+        if ans == 'Yes':
             print('Your change have been saved')
         else:
             print('Your file might not saved')
     elif student_id == 'abc0013':
         print('Opening the file....\nPlease Wait')
         student13_course_datas()
-        ans = input('Are you finished?')
-        if ans == 'Yes' or 'yes':
+        ans = input('Are you finished?(Yes?)')
+        if ans == 'Yes':
             print('Your change have been saved')
         else:
             print('Your file might not saved')
     elif student_id == 'abc0014':
         print('Opening the file....\nPlease Wait')
         student14_course_datas()
-        ans = input('Are you finished?')
-        if ans == 'Yes' or 'yes':
+        ans = input('Are you finished?(Yes?)')
+        if ans == 'Yes':
             print('Your change have been saved')
         else:
             print('Your file might not saved')
     elif student_id == 'abc0015':
         print('Opening the file....\nPlease Wait')
         student15_course_datas()
-        ans = input('Are you finished?')
-        if ans == 'Yes' or 'yes':
+        ans = input('Are you finished?(Yes?)')
+        if ans == 'Yes':
             print('Your change have been saved')
         else:
             print('Your file might not saved')
