@@ -1,0 +1,18 @@
+student1 = ['jkl6150\n',
+               '2020, Fall, CMPSC131 100 100 100 100 \n'
+               '2020, Fall, MATH140 100 100 100 100 \n'
+               '2020, Fall, ENGL015 100 100 100 100 \n'
+               '2020, Fall, KINES101 100 100 100 100 \n'
+               '2020, Fall, PSU001 100 100 100 100 \n'
+               '2020, Fall, COMM100 100 100 100 100 \n'
+               ]
+
+with open("file.txt", 'w') as f:
+    for s in student1:
+        f.write(str(s) + '\n')
+
+with open("file.txt", 'r') as f:
+    score = [line.rstrip('\n') for line in f]
+
+
+print(score)
