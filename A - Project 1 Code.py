@@ -21,6 +21,9 @@ def main():
                 change_student_courses()
 
             elif choice == 5:
+                print('❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤')
+                print('❤You have exit our menu❤')
+                print('❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤')
                 break
 
 def meun():
@@ -51,19 +54,25 @@ def student_inform():       #this is a system for part1
            meun()
            choice = int(input('Plese select\n'))
            if choice in [1, 2, 3, ]:
-               if choice == 1:
-                   student_inform()
-                   break
+               pass
+           if choice == 1:
+               student_inform()
 
-               elif choice == 2:
-                   read_ids()
 
-               elif choice == 3:
-                   break
-               elif choice == 4:
-                   change_student_courses()
-               elif choice == 5:
-                   break
+           elif choice == 2:
+               read_ids()
+
+           elif choice == 3:
+               change_Student_inform()
+               break
+           elif choice == 4:
+               change_student_courses()
+
+           elif choice == 5:
+               print('❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤')
+               print('❤You have exit our menu❤')
+               print('❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤')
+               break
 
 #---------------------------------------------------------------------------------------------
 #this is the system for part 2
