@@ -1,6 +1,7 @@
 import csv
 import webbrowser
 
+#PART 1
 def main():
 
     while True:
@@ -25,7 +26,7 @@ def main():
                 print('❤You have exit our menu❤')
                 print('❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤')
                 break
-
+#This is the MEUN
 def meun():
     print("----------------meun--------------------")
     print("|         1.Student information        |")
@@ -75,7 +76,7 @@ def student_inform():       #this is a system for part1
                break
 
 #---------------------------------------------------------------------------------------------
-#this is the system for part 2
+#this is the system for part 2, and will display the specific student's courses
 
 #I deleted all others, and decide to put it in all different database
 
@@ -222,14 +223,14 @@ def student15_course_datas():
         gradefile.close()
 
 #---------------------------------------------------------------------------------------------
-
+#This is the System in meun for (3)
 def student_inform_datas():
     with open('Students.csv', 'r') as gradefile:
         print(webbrowser.open('Students.csv'))
         gradefile.close()
 
 #---------------------------------------------------------------------------------------------
-
+#This is the System in menu for (4)
 def read_ids():     #read all the ids, and open them with notepad
         student_id = input('Enter the student number: ')
         if student_id == 'jkl6150':
@@ -401,6 +402,23 @@ def change_student_courses():
         print('This student id does not exist')
 
     print('○○○○○○○○○○○○○○○○○○○○○○○○○')
+
+Students_ = {'jkl6150': 'Freshmen',     #01
+             'jmc8444': 'Freshmen',     #02
+             'abc0003': 'Sophomore',    #03
+             'abc0004': 'Junior',       #04
+             'abc0005': 'Senior',       #05
+             'abc0006': 'Junior',       #06
+             'abc0007': 'Senior',       #07
+             'abc0008': 'Sophomore',    #08
+             'abc0009': 'Senior',       #09
+             'abc0010': 'Senior',       #10
+             'abc0011': 'Senior',       #11
+             'abc0012': 'Freshmen',     #12
+             'abc0013': 'Senior',       #13
+             'abc0014': 'Freshmen',     #14
+             'abc0015': 'Senior'        #15
+             }
 
 if __name__ == '__main__':
     main()
