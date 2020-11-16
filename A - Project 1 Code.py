@@ -1,6 +1,7 @@
 import csv
 import webbrowser
-#The full description will be in our WALKTHROUGH, WE KNOW THIS IS KINDA MESS. I MEAN REALLY MESS
+#The full description will be in our WALKTHROUGH / Which is in Github, WE KNOW THIS IS KINDA MESS. I MEAN REALLY MESS
+
 #PART 1
 def main():
 
@@ -27,7 +28,7 @@ def main():
                 add()
 
             elif choice == 7:
-                print('❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤')
+                print('❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤')  #This is just some customizize form, just for look better
                 print('❤You have exit our menu❤')
                 print('❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤')
                 break
