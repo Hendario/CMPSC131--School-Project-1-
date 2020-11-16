@@ -60,7 +60,7 @@ def meun():  # This is the MEUN, just a printed scoreboard
 def student_inform():       #this is a system for part1
     with open('students.csv','r') as csvfile:
         reader = csv.DictReader(csvfile)
-        student_id = input('Enter the sudent number: ')
+        student_id = input('Enter the student number: ')
         for row in reader:
             if student_id == row['student_id']:
                 for key, value in row.items():
