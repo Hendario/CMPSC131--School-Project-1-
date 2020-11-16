@@ -7,7 +7,7 @@ def main():
     while True:
         meun()
         choice = int(input('Plese select\n'))
-        if choice in [1,2,3,4,5]:
+        if choice in [1,2,3,4,5,6]:
             if choice == 1:
                 student_inform()
                 break
@@ -22,6 +22,9 @@ def main():
                 change_student_courses()
 
             elif choice == 5:
+                student_academic_standing()
+
+            elif choice == 6:
                 print('❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤')
                 print('❤You have exit our menu❤')
                 print('❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤')
@@ -33,7 +36,8 @@ def meun():
     print("|         2.Courses                    |")
     print("|         3.Change inform              |")
     print("|         4.Change courses             |")
-    print("|         5.Exit                       |")
+    print("|         5.Check Class Standing       |")
+    print("|         6.Exit                       |")
     print("----------------------------------------")
 
 def student_inform():       #this is a system for part1
@@ -403,6 +407,7 @@ def change_student_courses():
 
     print('○○○○○○○○○○○○○○○○○○○○○○○○○')
 
+#A dict of student's academic standing
 Students_ = {'jkl6150': 'Freshmen',     #01
              'jmc8444': 'Freshmen',     #02
              'abc0003': 'Sophomore',    #03
@@ -419,6 +424,20 @@ Students_ = {'jkl6150': 'Freshmen',     #01
              'abc0014': 'Freshmen',     #14
              'abc0015': 'Senior'        #15
              }
+
+def student_academic_standing():
+    print('○○○○○○○○○○○○○○○○○○○○○○○○○')
+    id_found = str(input('Enter your student id to see your academic standing\n'))
+    for student_id in Students_:
+        if student_id == id_found:
+            student_grade = Students_[student_id]
+            print('Student grade for {}, \nis: {}'.format(id_found,student_grade))
+            break
+    else:
+        print('Student id not found')
+
+    print('○○○○○○○○○○○○○○○○○○○○○○○○○')
+
 
 if __name__ == '__main__':
     main()
