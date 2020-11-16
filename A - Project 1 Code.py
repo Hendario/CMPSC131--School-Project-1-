@@ -223,6 +223,13 @@ def student15_course_datas():
 
 #---------------------------------------------------------------------------------------------
 
+def student_inform_datas():
+    with open('Students.csv', 'r') as gradefile:
+        print(webbrowser.open('Students.csv'))
+        gradefile.close()
+
+#---------------------------------------------------------------------------------------------
+
 def read_ids():     #read all the ids, and open them with notepad
         student_id = input('Enter the student number: ')
         if student_id == 'jkl6150':
@@ -262,7 +269,7 @@ def read_ids():     #read all the ids, and open them with notepad
 
 def change_Student_inform():
     print('○○○○○○○○○○○○○○○○○○○○○○○○○')
-    print('○○          COMING SOON             ○○')
+    student_inform_datas()
     print('○○○○○○○○○○○○○○○○○○○○○○○○○')
 
 def change_student_courses():
