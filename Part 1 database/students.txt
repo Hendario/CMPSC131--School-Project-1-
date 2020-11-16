@@ -1,0 +1,1 @@
+{'Stuent ID': 'jkl0001', 'First name': 'Jimmy', 'Last name': 'Lin', 'Phone number': 2672220000, 'Email ID': 'jinhong.com', 'Major': 'cs'}
