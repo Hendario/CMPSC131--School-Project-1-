@@ -10,7 +10,6 @@ def main():
         if choice in [1,2,3,4,5,6,7]:
             if choice == 1:
                 student_inform()
-                break
 
             elif choice == 2:
                 read_ids()
@@ -55,28 +54,10 @@ def student_inform():       #this is a system for part1
            if student_id == row['student_id']:
                for key,value in row.items():
                    print(key,':',value)
-               break
+                   break
        else:
            print('This id does not exist')
        print('○○○○○○○○○○○○○○○○○○○○○○○○○')
-       while True:
-           meun()
-           choice = int(input('Plese select\n'))
-           if choice in [1, 2, 3, ]:
-               pass
-           if choice == 1:
-               student_inform()
-
-
-           elif choice == 2:
-               read_ids()
-
-           elif choice == 3:
-               change_Student_inform()
-               break
-           elif choice == 4:
-               change_student_courses()
-
 
 #---------------------------------------------------------------------------------------------
 #this is the system for part 2, and will display the specific student's courses
@@ -273,18 +254,25 @@ def read_ids():     #read all the ids, and open them with notepad
 
 def change_Student_inform():
     print('○○○○○○○○○○○○○○○○○○○○○○○○○')
+    print('Opening file')
+    print('......')
     student_inform_datas()
+    ask = input('Did you saved your csv file?(Yes?)\n')
+    if ask == 'Yes':
+        print('Good.')
+    else:
+        print('You may not save you data')
     print('○○○○○○○○○○○○○○○○○○○○○○○○○')
 
 def change_student_courses():
     print('○○○○○○○○○○○○○○○○○○○○○○○○○')
     print('You can edit anything by using notepad,')
-    print('Format:\nYears,Semaster,Class,Test1,Test2,Test3,Test4\n(IMPORTANT:Remember to save the file!!!)')
+    print('Format:\nYears,Semaster,Average_assignment,Average_quizzes,Average_projects,Average_exams\n(IMPORTANT:Remember to save the file!!!)')
     student_id = input('Enter your student id to change your course\n')
     if student_id == 'jkl6150':
         print('Opening the file....\nPlease Wait')
         student1_course_datas()
-        ans = input('Are you finished?(Yes?)')
+        ans = input('Are you finished?(Yes?)\n')
         if ans == 'Yes':
             print('Your change have been saved')
         else:
