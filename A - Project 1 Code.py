@@ -1,6 +1,6 @@
 import csv
 import webbrowser
-
+#The full description will be in our WALKTHROUGH, WE KNOW THIS IS KINDA MESS. I MEAN REALLY MESS
 #PART 1
 def main():
 
