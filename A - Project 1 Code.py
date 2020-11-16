@@ -7,7 +7,7 @@ def main():
     while True:
         meun()
         choice = int(input('Plese select\n'))
-        if choice in [1,2,3,4,5,6]:
+        if choice in [1,2,3,4,5,6,7]:
             if choice == 1:
                 student_inform()
                 break
@@ -25,6 +25,9 @@ def main():
                 student_academic_standing()
 
             elif choice == 6:
+                add()
+
+            elif choice == 7:
                 print('❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤')
                 print('❤You have exit our menu❤')
                 print('❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤')
@@ -37,7 +40,8 @@ def meun():
     print("|         3.Change inform              |")
     print("|         4.Change courses             |")
     print("|         5.Check Class Standing       |")
-    print("|         6.Exit                       |")
+    print("|         6.Add student inform         |")
+    print("|         7.Exit                       |")
     print("----------------------------------------")
 
 def student_inform():       #this is a system for part1
@@ -73,11 +77,6 @@ def student_inform():       #this is a system for part1
            elif choice == 4:
                change_student_courses()
 
-           elif choice == 5:
-               print('❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤')
-               print('❤You have exit our menu❤')
-               print('❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤❤')
-               break
 
 #---------------------------------------------------------------------------------------------
 #this is the system for part 2, and will display the specific student's courses
@@ -407,6 +406,11 @@ def change_student_courses():
 
     print('○○○○○○○○○○○○○○○○○○○○○○○○○')
 
+def total_courses():
+    databases = ['databse1.txt','databse2.txt']
+    students_file = open(databases[0],'r')
+    print(students_file)
+
 #A dict of student's academic standing
 Students_ = {'jkl6150': 'Freshmen',     #01
              'jmc8444': 'Freshmen',     #02
@@ -437,6 +441,49 @@ def student_academic_standing():
         print('Student id not found')
 
     print('○○○○○○○○○○○○○○○○○○○○○○○○○')
+
+filename = 'students.txt'
+
+def add():
+    stdentList = []  # Save a list of student information
+    mark = True
+    while mark:
+        id = input("Plese Enter a Student ID You Want To ADD：")
+        if not id:  # when ID is empty, out of the loop
+            break
+        first_name = input("Please Enter Your First Name：")
+        if not first_name:  # when name is empty, out of the loop
+            break
+        last_name = input('Please Enter Your Last name:')
+        if not last_name:
+            break
+        try:
+            phone_num = int(input("Please Enter Your Phone Number："))
+            email = input("Please Enter Your Email ID：")
+            major = input("Please Enter Your Major：")
+        except:
+            print("This is invalid. . . . Re-enter information")
+            continue
+        stdent = {"Stuent ID": id, "First name": first_name,"Last name": last_name, "Phone number": phone_num, "Email ID": email, "Major": major}  # 将输入的学生信息保存到字典
+        stdentList.append(stdent)  # Add student dictionary to list
+        inputMark = input("DO You Want To Keep Adding Information?（Yes or No）:")
+        if inputMark == "Yes":  # Keep adding
+            mark = True
+        else:  # Do not continue to add
+            mark = False
+    save(stdentList)  # Save student information to file
+    print("The Student Information is Entered! ! !")
+
+
+# Save student information to file
+def save(student):
+    try:
+        students_txt = open(filename, "a")  # Open in append mode
+    except Exception as e:
+        students_txt = open(filename, "w+")  # when the file does not exist,it will create a file and open
+    for info in student:
+        students_txt.write(str(info) + "\n")  # Store by line, add line break
+    students_txt.close()  # close the file
 
 
 if __name__ == '__main__':
